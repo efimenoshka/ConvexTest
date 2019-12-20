@@ -1,3 +1,5 @@
+import java.awt.*;
+
 class Void implements Figure {
 
     public double perimeter() {
@@ -9,6 +11,13 @@ class Void implements Figure {
     }
 
     public Figure add(R2Point p) {
+        Convex.KOL++;
+        Convex.c = new R2Point(p.getX(), p.getY());
         return new Point(p);
+    }
+
+    public void draw(Graphics2D g)
+    {
+
     }
 }

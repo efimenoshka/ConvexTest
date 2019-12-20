@@ -10,10 +10,9 @@ class R2Point {
 
     public R2Point() throws Exception {
         Scanner scan = new Scanner(System.in);
-        System.out.println("x = ");
-        System.out.println(x = scan.nextDouble());
-        System.out.println("y = ");
-        System.out.println(y = scan.nextDouble());
+        System.out.print("Введите координаты точки: ");
+        x = scan.nextDouble();
+        y = scan.nextDouble();
     }
 
     public static double dist(R2Point a, R2Point b) {
@@ -40,5 +39,13 @@ class R2Point {
     public boolean light(R2Point a, R2Point b) {
         double s = area(a, b, this);
         return s < 0.0 || (s == 0.0 && !inside(a, b));
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
     }
 }
