@@ -17,7 +17,7 @@ public class Window extends JFrame {
         g.clearRect(0,0, getWidth(),getHeight());
 
         g.translate(getWidth()/2,getHeight()/2);
-        g.setColor(Color.BLACK);
+        g.setColor(Color.blue);
         g.drawLine(-getWidth()/2,0,getWidth()/2,0);
         g.drawLine(0,-getHeight()/2,0,getHeight()/2);
         convex.draw(g);
